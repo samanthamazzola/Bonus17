@@ -13,6 +13,7 @@ namespace Bonus16
         {
             Console.WriteLine("Welcome to the Grand Circus Motors admin console!");
             Console.WriteLine("How many cars are you entering: ");
+
             int input = int.Parse(Console.ReadLine());
 
             // List of Car 
@@ -32,7 +33,7 @@ namespace Bonus16
                 temp.Year = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Please provide the Price of the car:");
-                temp.Price = float.Parse(Console.ReadLine());
+                temp.Price = double.Parse(Console.ReadLine());
 
                 car.Add(temp);// add the temp object to the Car list 
 
@@ -41,16 +42,17 @@ namespace Bonus16
                 if (choice.ToLower() == "n") //so it doesn't matter if it's lower case or uppper case input
                     break;
             }
-
+            Console.Clear();
              // print car list method?
+            Console.WriteLine("Current Inventory: ");
+            Console.WriteLine("\tMake \tModel \tYear \tPrice");
+            Console.WriteLine("\t===== \t===== \t===== \t=====");
+
             foreach (Car c in car)
             {
-                Console.WriteLine("Current Inventory: ");
-                Console.WriteLine("\tMake \tModel \tYear \tPrice");
-                Console.WriteLine("\t===== \t===== \t===== \t=====");
-                Console.WriteLine($"{c.Make, 5} {c.Model, 5} {c.Year, 5} {c.Price, 5} ");
+                Console.WriteLine($"\t{c.Make} \t{c.Model} \t{c.Year} \t${c.Price}"); //prints info for every car stored in the Car class list
             }
-
+           
             //for (int i = 0; i < employees.Count; i++)
             //{
             //    Console.WriteLine($"{employees[i].FirstName} {employees[i].LastName}");
