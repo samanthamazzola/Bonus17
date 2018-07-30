@@ -1,0 +1,6 @@
+/Users/samanthamazzola/Projects/Bonus16/Bonus16/obj/x86/Debug/Bonus16.csprojResolveAssemblyReference.cache
+/Users/samanthamazzola/Projects/Bonus16/Bonus16/obj/x86/Debug/Bonus16.csproj.CoreCompileInputs.cache
+/Users/samanthamazzola/Projects/Bonus16/Bonus16/bin/Debug/Bonus16.exe
+/Users/samanthamazzola/Projects/Bonus16/Bonus16/bin/Debug/Bonus16.pdb
+/Users/samanthamazzola/Projects/Bonus16/Bonus16/obj/x86/Debug/Bonus16.exe
+/Users/samanthamazzola/Projects/Bonus16/Bonus16/obj/x86/Debug/Bonus16.pdb
