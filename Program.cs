@@ -11,7 +11,10 @@ namespace Bonus16
     {
         public static void Main(string[] args)
         {
-            
+            Console.WriteLine("Welcome to the Grand Circus Motors admin console!");
+            Console.WriteLine("How many cars are you entering: ");
+            int input = int.Parse(Console.ReadLine());
+
             // List of Car 
             List<Car> car = new List<Car>();
             // used to add new car to the list 
@@ -42,8 +45,10 @@ namespace Bonus16
              // print car list method?
             foreach (Car c in car)
             {
-                Console.WriteLine($"{c.Make} | {c.Model} | {c.Year} | {c.Price} ");
-                Console.WriteLine("==========================================");
+                Console.WriteLine("Current Inventory: ");
+                Console.WriteLine("\tMake \tModel \tYear \tPrice");
+                Console.WriteLine("\t===== \t===== \t===== \t=====");
+                Console.WriteLine($"{c.Make, 5} {c.Model, 5} {c.Year, 5} {c.Price, 5} ");
             }
 
             //for (int i = 0; i < employees.Count; i++)
