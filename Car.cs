@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,6 +40,32 @@ namespace Bonus16
         {
             set { price = value; }
             get { return price; }
+        }
+
+        // default constructor (takes no param)
+        public Car()
+        {
+            Make = "not assigned";
+            Model = "not assigned";
+            Year = 2018;
+            Price = 40000;
+        }
+
+        // overload constructor 
+        public Car(string ma, string mo, int yr, int p)
+        {
+            Make = ma;
+            Model = mo;
+            Year = yr;
+            Price = p;
+        }
+
+        // method from main class
+        // virtual method
+        public virtual void
+        ToString()
+        {
+            Console.WriteLine($"{Make,-15} {Model,-15} {Year,-15} {Price,-15}");
         }
     }
 }
