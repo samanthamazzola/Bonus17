@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,8 +42,11 @@ namespace Bonus16
             get { return price; }
         }
 
+<<<<<<< HEAD
         public double Mileage { get; internal set; }
 
+=======
+>>>>>>> 11e50b1720b7cb0cffc4729d3447ea6cd8d3444f
         // default constructor (takes no param)
         public Car()
         {
@@ -64,9 +67,16 @@ namespace Bonus16
 
         // method from main class
         // virtual method
+<<<<<<< HEAD
         public virtual void ToString()
         {
             Console.WriteLine($"{Make,-5} {Model,-5} {Year,-5} {Price,-5} {Mileage,-5}");
+=======
+        public virtual void
+        ToString()
+        {
+            Console.WriteLine($"{Make,-15} {Model,-15} {Year,-15} {Price,-15}");
+>>>>>>> 11e50b1720b7cb0cffc4729d3447ea6cd8d3444f
         }
     }
 }
