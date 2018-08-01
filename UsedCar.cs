@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace Bonus16
 {
     class UsedCar : Car // inheriting from Car class 
@@ -36,9 +36,14 @@ namespace Bonus16
         //   Console.WriteLine($"{Mileage, -5}");
         //}
 
-        public virtual void ToString()
+        public override void ToString()
         {
-            Console.WriteLine($"{Make,-5} {Model,-5} {Year,-5} {Price,-5} {Mileage,-5}");
+            Console.WriteLine($"{Make,-5} {Model,-5} {Year,-5} {Price,-5} (Used){Mileage,-5}");
+        }
+        public virtual void PrintInfo()
+        {
+            
+            Console.WriteLine($"{Make,-15} {Model,-15} {Year,-15} {Price,-15} (Used){Mileage,-5}");
         }
     }
 }
