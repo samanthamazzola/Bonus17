@@ -31,9 +31,14 @@ namespace Bonus16
 
         // methods
         // virtual method derived from the Base class method c.ToString()
-        public override void ToString()
+        //public override void ToString()
+        //{
+        //   Console.WriteLine($"{Mileage, -5}");
+        //}
+
+        public virtual void ToString()
         {
-           // Console.WriteLine($"{Mileage, -5}");
+            Console.WriteLine($"{Make,-5} {Model,-5} {Year,-5} {Price,-5} {Mileage,-5}");
         }
     }
 }
