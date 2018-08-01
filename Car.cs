@@ -41,5 +41,32 @@ namespace Bonus16
             set { price = value; }
             get { return price; }
         }
+
+        public double Mileage { get; internal set; }
+
+        // default constructor (takes no param)
+        public Car()
+        {
+            Make = "not assigned";
+            Model = "not assigned";
+            Year = 2018;
+            Price = 40000;
+        }
+
+        // overload constructor 
+        public Car(string ma, string mo, int yr, int p)
+        {
+            Make = ma;
+            Model = mo;
+            Year = yr;
+            Price = p;
+        }
+
+        // method from main class
+        // virtual method
+        public virtual void ToString()
+        {
+            Console.WriteLine($"{Make,-5} {Model,-5} {Year,-5} {Price,-5} {Mileage,-5}");
+        }
     }
 }

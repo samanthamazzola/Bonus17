@@ -11,54 +11,56 @@ namespace Bonus16
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Grand Circus Motors admin console!");
-            Console.WriteLine("How many cars are you entering: ");
+            
+            // List of Cars you build
+            List<Car> cars = new List<Car>(); // empty list you're adding to
 
-            int input = int.Parse(Console.ReadLine());
 
-            // List of Car 
-            List<Car> car = new List<Car>();
-            // used to add new car to the list 
+            //makeModel regex = @"^[a-z][A-Z]
+
             while (true)
             {
+
                 Console.Clear();
-                Car temp = new Car();
+
+                Console.WriteLine("Welcome to the Grand Circus Motors admin console!");
+
+                //Console.WriteLine("How many cars are you entering: ");
                 Console.WriteLine("Please provide Make of the car:");
-                temp.Make = Console.ReadLine();
+
+                Car c = new Car(); //create object type car
+                c.Make = Console.ReadLine();
 
                 Console.WriteLine("Please provide the Model of the car:");
-                temp.Model = Console.ReadLine();
+                c.Model = Console.ReadLine();
 
                 Console.WriteLine("Please provide the Year:");
-                temp.Year = int.Parse(Console.ReadLine());
+                c.Year = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Please provide the Price of the car:");
-                temp.Price = double.Parse(Console.ReadLine());
+                c.Price = double.Parse(Console.ReadLine());
 
-                car.Add(temp);// add the temp object to the Car list 
+                Console.WriteLine("Please provide the Mileage used for this car:");
+                c.Mileage = double.Parse(Console.ReadLine());
+
+                cars.Add(c);// add the temp object to the Car list 
 
                 Console.WriteLine("Do you want to add another car? Y/N");
                 string choice = Console.ReadLine();
                 if (choice.ToLower() == "n") //so it doesn't matter if it's lower case or uppper case input
                     break;
             }
+
             Console.Clear();
              // print car list method?
             Console.WriteLine("Current Inventory: ");
-            Console.WriteLine("\tMake \tModel \tYear \tPrice");
-            Console.WriteLine("\t===== \t===== \t===== \t=====");
+            Console.WriteLine("Make Model Year Price Mileage");
+            Console.WriteLine("===== ===== ===== ===== =====");
 
-            foreach (Car c in car)
+            foreach (Car c in cars) //{ ma,mo,yr,p,mi} // for each listed item that was stored, print info input
             {
-                Console.WriteLine($"\t{c.Make} \t{c.Model} \t{c.Year} \t${c.Price}"); //prints info for every car stored in the Car class list
+                c.ToString();
             }
-           
-            //for (int i = 0; i < employees.Count; i++)
-            //{
-            //    Console.WriteLine($"{employees[i].FirstName} {employees[i].LastName}");
-            //    Console.WriteLine("===================");
-            //}
-
         }
     }
 }
