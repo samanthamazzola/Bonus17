@@ -60,7 +60,6 @@ namespace Bonus16
                             if (cars.IndexOf(c) + 1 == int.Parse(input))
                             {
                                 c.PrintInfo();
-                                string yn = "";
                                 Console.WriteLine();
                             }
                         }
