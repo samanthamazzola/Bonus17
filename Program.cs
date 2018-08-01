@@ -16,11 +16,11 @@ namespace Bonus16
 
             // create objects because not asking for input, and the vars are initialized with data below
             // can list a string, but will pass an int so user can select vehicle by number on list to get info
-            Car c1 = new Car("Ford", "Focus", 2017, "$"12,000, 10);
-            Car c2 = new Car("Chevy", "Impala", 2017, "$"15,000, 10);
-            Car c3 = new Car("GMC", "Terrain", 2017, "$"22,000, 10);
+            Car c1 = new Car("Ford", "Focus", 2017, 12,000, 10);
+            Car c2 = new Car("Chevy", "Impala", 2017, 15,000, 10);
+            Car c3 = new Car("GMC", "Terrain", 2017, 22,000, 10);
             UsedCar u1 = new UsedCar("Cadillac", "XT5", 2017, 35,000, 35,987.6);
-            UsedCar u2 = new UsedCar("BMW", "i8", 2017, "$"90,000, 50,432.8);
+            UsedCar u2 = new UsedCar("BMW", "i8", 2017, 90,000, 50,432.8);
             UsedCar u3 = new UsedCar("Range Rover", "Sport", 2017, 82,000, 60,342.8);
             Car m7;
 
